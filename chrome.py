@@ -1,9 +1,17 @@
+import os
+import time
+import json
+import winreg
+import random
+import requests
+import websocket
+import subprocess
+
 class Chrome:
-    def __init__(self, name, sex, profession):
+    def __init__(self, chrome_path=false):
         # data members (instance variables)
+        self.chrome_path = None
         self.name = name
-        self.sex = sex
-        self.profession = profession
 
     # Behavior (instance methods)
     def show(self):
